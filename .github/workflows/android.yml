@@ -1,0 +1,45 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build APK from Website
+    runs-on: ubuntu-latest
+
+    env:
+      WEBSITE_URL: "http://192.168.50.117:8285"
+      APP_NAME: "Organizr"
+      PACKAGE_NAME: "organizer.git.webapp"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Replace Website URL
+        run: |
+          sed -i "s|https://example.com|$WEBSITE_URL|g" app/src/main/java/com/jipok/webtoapk/MainActivity.java
+          sed -i "s|My Web App|$APP_NAME|g" app/src/main/res/values/strings.xml
+          sed -i "s|com.example.webapp|$PACKAGE_NAME|g" app/build.gradle
+          sed -i "s|com.example.webapp|$PACKAGE_NAME|g" app/src/main/AndroidManifest.xml
+
+      - name: Build APK
+        run: ./gradlew assembleRelease
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.apk
+          path: app/build/outputs/apk/release/app-release.apk
