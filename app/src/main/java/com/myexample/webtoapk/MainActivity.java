@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     private ValueCallback<Uri[]> mFilePathCallback;       // Image upload
     private ActivityResultLauncher<Intent> fileChooserLauncher; // Image upload
 
-    String mainURL = "https://github.com/Jipok";
+    String mainURL = "http://192.168.50.117:8285";
     boolean requireDoubleBackToExit = true;
     boolean allowSubdomains = true;
 
