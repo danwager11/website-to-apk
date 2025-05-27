@@ -51,7 +51,6 @@ import android.webkit.WebChromeClient.FileChooserParams;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 
-
 // import android.webkit.DownloadListener;
 // import android.util.Base64;
 // import java.io.File;
@@ -156,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
         cookieManager.setCookie(mainURL, cookies);
         cookieManager.flush();
 
+         // Optional: enable autofill support
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            webview.setImportantForAutofill(Webview.IMPORTANT_FOR_AUTOFILL_YES);
+        }    
         // Request geo access only if have `android.permission.ACCESS_FINE_LOCATION`
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
