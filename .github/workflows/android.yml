@@ -47,7 +47,7 @@ jobs:
           fi
 
       - name: Build APK (unsigned)
-        run: ./gradlew assembleRelease -x signRelease
+        run: ./gradlew assembleRelease -x signReleaseBundle
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
