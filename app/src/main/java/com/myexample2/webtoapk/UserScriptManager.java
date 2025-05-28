@@ -1,4 +1,4 @@
-package com.myexample.webtoapk;
+package com.myexample2.webtoapk;
 
 import android.content.Context;
 import java.io.BufferedReader;
