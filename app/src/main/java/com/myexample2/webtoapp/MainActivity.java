@@ -1,4 +1,4 @@
-package com.myexample2.webtoapk;
+package com.myexample.webtoapk;
 
 import android.content.DialogInterface;
 import android.net.http.SslError;
