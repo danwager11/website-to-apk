@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WEBSITE_URL: "http://192.168.50.117:8285"
-      APP_NAME: "Organizr"
-      PACKAGE_NAME: "organizer.git.webapp"
+      WEBSITE_URL: "http://100.76.14.41:8286"
+      APP_NAME: "Organizr Global"
+      PACKAGE_NAME: "organizerglobal.git.webapp"
 
     steps:
       - name: Checkout repo
