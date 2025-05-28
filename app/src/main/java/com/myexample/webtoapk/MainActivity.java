@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     private ValueCallback<Uri[]> mFilePathCallback;       // Image upload
     private ActivityResultLauncher<Intent> fileChooserLauncher; // Image upload
 
-    String mainURL = "http://192.168.50.117:8285";
+    String mainURL = "http://100.76.14.41:8286";
     boolean requireDoubleBackToExit = true;
     boolean allowSubdomains = true;
 
