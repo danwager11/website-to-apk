@@ -1,4 +1,4 @@
--keepclassmembers class com.myexample2.webtoapk.MainActivity {
+-keepclassmembers class com.suwayomi.webtoapk.MainActivity {
     *;
 }
 
