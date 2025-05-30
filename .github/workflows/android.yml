@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WEBSITE_URL: "http://100.76.14.41:8286"
-      APP_NAME: "Organizr Global"
-      PACKAGE_NAME: "organizerglobal.git.webapp"
+      WEBSITE_URL: "100.76.14.41:4567"
+      APP_NAME: "Suwayomi"
+      PACKAGE_NAME: "suwayomi.git.webapp"
 
     steps:
       - name: Checkout repo
