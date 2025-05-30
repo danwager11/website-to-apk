@@ -1,4 +1,4 @@
-package com.myexample2.webtoapk;
+package com.suwayomi.webtoapk;
 
 import android.content.DialogInterface;
 import android.net.http.SslError;
