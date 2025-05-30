@@ -11,7 +11,8 @@ change proguard-rules.pro
 URL and App Name: 
 website-to-apk/.github/workflows/android.yml - change both
 website-to-apk/app/src/main/java/com/myexample2/webtoapk/MainActivity.java
-     String mainURL = ""; 
+website-to-apk/app/src/main/res/values/strings.xml <string name="app_name">Suwayomi</string>
+
     
 
 Logo:    
