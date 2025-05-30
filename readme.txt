@@ -16,4 +16,6 @@ website-to-apk/app/src/main/res/values/strings.xml <string name="app_name">Suway
     
 
 Logo:    
-website-to-apk/app/src/main/AndroidManifest.xml
+website-to-apk/app/src/main/res/mipmap/ - put logo here
+
+website-to-apk/app/src/main/AndroidManifest.xml change name
