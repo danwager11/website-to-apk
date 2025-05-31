@@ -1,4 +1,4 @@
-package com.suwayomi.webtoapk;
+package com.hentai.webtoapk;
 
 import android.content.Context;
 import java.io.BufferedReader;
