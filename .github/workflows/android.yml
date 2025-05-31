@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WEBSITE_URL: "100.76.14.41:4567"
-      APP_NAME: "Suwayomi"
-      PACKAGE_NAME: "suwayomi.git.webapp"
+      WEBSITE_URL: "100.76.14.41:4568"
+      APP_NAME: "Hentai"
+      PACKAGE_NAME: "hentai.git.webapp"
 
     steps:
       - name: Checkout repo
