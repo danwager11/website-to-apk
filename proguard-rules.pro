@@ -1,4 +1,4 @@
--keepclassmembers class com.suwayomi.webtoapk.MainActivity {
+-keepclassmembers class com.hentai.webtoapk.MainActivity {
     *;
 }
 
