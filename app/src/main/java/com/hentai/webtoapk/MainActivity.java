@@ -1,4 +1,4 @@
-package com.suwayomi.webtoapk;
+package com.hentai.webtoapk;
 
 import android.content.DialogInterface;
 import android.net.http.SslError;
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     private ValueCallback<Uri[]> mFilePathCallback;       // Image upload
     private ActivityResultLauncher<Intent> fileChooserLauncher; // Image upload
 
-    String mainURL = "http://100.76.14.41:4567";
+    String mainURL = "http://100.76.14.41:4568";
     boolean requireDoubleBackToExit = true;
     boolean allowSubdomains = true;
 
