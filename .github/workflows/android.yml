@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WEBSITE_URL: "http://100.76.14.41:8083"
+      WEBSITE_URL: "http://100.76.14.41:5050"
       APP_NAME: "Calibre"
       PACKAGE_NAME: "calibre.git.webapp"
 
