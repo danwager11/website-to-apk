@@ -1,4 +1,4 @@
-package com.hentai.webtoapk;
+package com.calibre.webtoapk;
 
 import android.content.DialogInterface;
 import android.net.http.SslError;
