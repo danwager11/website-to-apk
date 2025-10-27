@@ -1,4 +1,4 @@
-package com.hentai.webtoapk;
+package com.calibre.webtoapk;
 
 import android.content.Context;
 import java.io.BufferedReader;
