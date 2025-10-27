@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hentai</string>
+    <string name="app_name">Calibre</string>
     <string name="error_message">Check internet connection</string>
     <string name="exit_app">Tap back again to exit</string>
     <string name="try_again">Try again</string>
@@ -8,3 +8,4 @@
     <string name="open_in_browser">Open this link in browser?</string>
     <string name="open_in_external_app">Open this link in external app?</string>
 </resources>
+
