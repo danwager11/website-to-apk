@@ -18,11 +18,11 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    namespace 'com.hentai.webtoapk'
+    namespace 'com.calibre.webtoapk'
 
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.hentai.webtoapk"
+        applicationId "com.calibre.webtoapk"
         minSdkVersion 24
         targetSdkVersion 33
         versionCode 1
