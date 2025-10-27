@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WEBSITE_URL: "100.76.14.41:4568"
-      APP_NAME: "Hentai"
-      PACKAGE_NAME: "hentai.git.webapp"
+      WEBSITE_URL: "http://100.76.14.41:8083"
+      APP_NAME: "Calibre"
+      PACKAGE_NAME: "calibre.git.webapp"
 
     steps:
       - name: Checkout repo
